@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Данил Мальков](https://up.htmlacademy.ru/htmlcss/36/user/2327087).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Дроганов](https://htmlacademy.ru/profile/dmdragon) .
 
 ---
 
