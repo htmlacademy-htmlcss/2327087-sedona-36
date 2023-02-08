@@ -7,7 +7,7 @@
   <body>
 
 
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li>
@@ -41,7 +41,7 @@
     </header>
 
 
-    <main class="page-hotel">
+    <main class="page-hotel" data-test="main">
        <header class="hotel-header">
         <h1 class="hotel-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -59,7 +59,7 @@
         </ul>
 
 
-        <section class="hotel-products-header">
+        <section class="hotel-products-header" data-test="filter">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="hotel-filter" action="#" method="get">
             <fieldset class="hotel-flter-group">
@@ -125,7 +125,7 @@
 
        </header>
 
-       <section class="hotel-products">
+       <section class="hotel-products" data-test="catalog">
         <h2 class="visually-hidden">Найденные гостиницы</h2>
         <p class="number-of-hotels">Найдено гостиниц<span>:</span>38</p>
         <select class="select-control" aria-label="Сортировка">
@@ -274,8 +274,8 @@
     </main>
 
 
-    <footer class="page-footer">
-      <section class="mailing-hotel">
+    <footer class="page-footer" data-test="footer">
+      <section class="mailing-hotel" data-test="subscribe">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form action="#" method="get">
