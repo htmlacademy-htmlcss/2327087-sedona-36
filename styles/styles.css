@@ -31,7 +31,17 @@
   font-display: swap;
 }
 
+html,
 body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -42,6 +52,12 @@ body {
 }
 
 /*HEADER*/
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .page-header {
   font-weight: 700;
   font-size: 20px;
@@ -49,9 +65,26 @@ body {
   text-transform: capitalize;
 }
 
-.navigation-list,
-.navigation-user {
+.logo-header {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+}
+
+.navigation-list {
+  text-align: left;
+  width: 440px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -86,6 +119,15 @@ body {
   position: relative;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-conteiner {
+  flex-grow: 1;
+}
+
 .title-page {
   font-weight: 700;
   font-size: 30px;
@@ -102,20 +144,29 @@ body {
   color: #333333;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /*ADVANTAGES*/
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
   width: 400px;
-  height: 385px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  outline: 2px solid black;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -148,16 +199,32 @@ body {
 }
 
 /*SERVICE*/
+.services {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
 .services-list {
   list-style: none;
+  display: flex;
 }
 
 .services-item {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.services-item-food {
+  background-color: #FFFFFF;
 }
 
 .services-paragraph {
@@ -170,6 +237,13 @@ body {
 }
 
 /*INTERESTING*/
+  .interesting {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .button-link {
     font-weight: 700;
     font-size: 20px;
@@ -188,8 +262,15 @@ body {
     background-image: url("../image/mailing-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 415px;
+    background-size: 100%;
     position: relative;
+  }
+
+  .mail {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .button-mail {
@@ -219,9 +300,18 @@ body {
 
 
 /*FOOTER*/
+  .page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .footer-social-list {
+    justify-content: center;
+    width: 1200px;
     list-style: none;
   }
+
 
   .footer-contacts-address-phone {
     text-decoration: none;
@@ -233,8 +323,6 @@ body {
     color: #000000;
   }
 
-  .footer-social-item {
-  }
 
   /*CATALOG*/
   /*HEADER-TITLE*/
