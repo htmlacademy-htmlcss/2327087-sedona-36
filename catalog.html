@@ -44,8 +44,7 @@
     <main class="page-hotel main-container">
       <div class="page-container">
 
-        <header class="hotel-header">
-          <div class="hotel-sedona">
+        <div class="hotel-header main-bg-catalog">
             <h1 class="hotel-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
@@ -60,36 +59,37 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ol>
-          </div>
+
 
           <section class="hotel-products-header">
-            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+            <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
             <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="hotel-flter-group">
+
+              <fieldset class="hotel-filter-group">
                 <legend class="hotel-filter-title">Инфраструктура<span>:</span></legend>
                 <ul class="hotel-filter-list">
                   <li class="hotel-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="Бассейн" checked>
-                      Бассейн
+                      <span class="control-lable">Бассейн</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="Парковка" checked>
-                      Парковка
+                      <span class="control-lable">Парковка</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <span class="control-lable">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="hotel-flter-group">
+              <fieldset class="hotel-filter-group">
                 <legend class="hotel-filter-title">Тип жилья<span>:</span></legend>
                 <ul class="hotel-filter-list">
                   <li class="hotel-filter-item">
@@ -113,39 +113,65 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="hotel-flter-group">
+              <fieldset class="hotel-filter-group filter-fieldset-price">
                 <legend class="hotel-filter-title">Стоимость<span>, ₽:</span></legend>
-                <label class="control">от<input type="text" value="0"></label>
-                <label class="control">до<input type="text" value="9000"></label>
-                <!--ДОДЕЛАТЬ ПОЛЗУНОК (КАК ВНОСИТЬ "ОТ" И "ДО" В ПОЛЕ)-->
+
+                <div class="range">
+                  <div class="range-fields">
+                    <label class="range-field">
+                      <span class="range-title">от</span>
+                      <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100" placeholder="0">
+                    </label>
+
+                    <label class="range-field">
+                      <span class="range-title">до</span>
+                      <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100" placeholder="10000">
+                    </label>
+                  </div>
+
+                  <div class="range-slider slider">
+                    <div class="slider-bar" style="margin-right: 50px;">
+                        <button class="slider-thumb" type="button">
+                            <span class="visually-hidden">Ручка минимальной цены</span>
+                        </button>
+                        <button class="slider-thumb" type="button">
+                            <span class="visually-hidden">Ручка максимальной цены</span>
+                        </button>
+                    </div>
+                  </div>
+
               </fieldset>
 
-              <button class="button-ok" type="submit">Применить</button>
-              <button class="button-back" type="reset">Сбросить</button>
+              <div class="filter-buttons">
+                <button class="button-ok" type="submit">Применить</button>
+                <button class="button-back" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
 
-
-        </header>
+        </div>
 
        <section class="hotel-products">
-        <p class="visually-hidden">Найденные гостиницы</p>
-        <h2 class="number-of-hotels">Найдено гостиниц<span>:</span>38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-        </select>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-          <img class="select-control-logo" src="image/view-1.svg" width="16" height="14" alt="Показать карточки">
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-          <img class="select-control-logo" src="image/view-2.svg" width="16" height="14" alt="Показать список">
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Карточка гостиницы</span>
-          <img class="select-control-logo" src="image/view-3.svg" width="16" height="14" alt="Карточка гостиницы">
-        </a>
+        <div class="catalog-sort">
+          <p class="visually-hidden" hidden>Найденные гостиницы</p>
+          <h2 class="number-of-hotels">Найдено гостиниц<span>:</span>38</h2>
+
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+          </select>
+          <a class="button" href="#">
+            <span class="visually-hidden">Карточками</span>
+            <img class="select-control-logo" src="image/view-1.svg" width="16" height="14" alt="Карточками">
+          </a>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Слайдами</span>
+            <img class="select-control-logo" src="image/view-2.svg" width="16" height="14" alt="Слайдами">
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Списком</span>
+            <img class="select-control-logo" src="image/view-3.svg" width="16" height="14" alt="Списком">
+          </a>
+        </div>
 
         <!--PRODUCT.HTML создать файл-->
        <ul class="product-list">
