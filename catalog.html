@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="image/style/favicon.png">
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon.png">
   </head>
+
+
   <body>
+
     <div class="page-container">
+
       <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" src="image/index/logo.svg" width="140" height="70" alt="Логотип Седона.">
+            <img class="page-header-logo" src="image/logo.svg" width="140" height="70" alt="Логотип Седона.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -25,6 +29,7 @@
               <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
             </li>
           </ul>
+
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link search-icon" href="#">
@@ -43,7 +48,10 @@
           </ul>
         </nav>
       </header>
+
+
       <main class="main-inner main-container">
+
         <header class="inner-header">
           <h1 class="inner-header-title page-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -56,8 +64,10 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
+
           <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="filter-wrap-left">
+
               <fieldset class="hotels-filter-group">
                 <legend class="hotels-filter-title">Инфраструктура:</legend>
                 <ul class="hotels-filter-list">
@@ -84,6 +94,7 @@
                   </li>
                 </ul>
               </fieldset>
+
               <fieldset class="hotels-filter-group">
                 <legend class="hotels-filter-title">Тип Жилья:</legend>
                 <ul class="hotels-filter-list">
@@ -111,6 +122,7 @@
                 </ul>
               </fieldset>
             </div>
+
               <div class="filter-wrap-right">
               <fieldset class="hotels-filter-group">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
@@ -127,7 +139,7 @@
                     </div>
                   </div>
               </fieldset>
-              
+
               <div class="filter-button-wrap">
                 <button class="button blue apply-button" type="submit">Применить</button>
                 <button class="button transparent reset-button" type="reset">Сбросить</button>
@@ -137,6 +149,7 @@
         </header>
 
         <section class="hotels">
+
           <div class="hotels-title-view-wrap">
             <h2 class="hotels-title section-title">Найдено гостиниц: <span class="hotels-found">38</span></h2>
             <select class="control-select" aria-label="Сортировка">
@@ -156,10 +169,11 @@
               </a>
             </div>
           </div>
+
           <ul class="hotels-list">
             <li class="hotels-card">
               <a class="hotels-card-link-image" href="#">
-                <img class="hotels-card-image" src="image/hotels/amara-resort.jpg" width="300" height="212" alt="Вид на ночное звездное небо из пещеры.">
+                <img class="hotels-card-image" src="image/hotel-1.jpg" width="300" height="212" alt="Вид на ночное звездное небо из пещеры.">
                 <h3 class="hotels-card-title card-title">Amara Resort & Spa</h3>
               </a>
               <span class="hotels-card-hotel">Гостиница</span>
@@ -171,9 +185,10 @@
               </div>
               <span class="hotels-rating">РЕЙТИНГ: 8,5</span>
             </li>
+
             <li class="hotels-card">
               <a class="hotels-card-link-image" href="#">
-                <img class="hotels-card-image" src="image/hotels/villas-at-poco-diablo.jpg " width="300" height="212" alt="Красные скалы на фоне облаков и радуги.">
+                <img class="hotels-card-image" src="image/hotel-2.jpg" width="300" height="212" alt="Красные скалы на фоне облаков и радуги.">
                 <h3 class="hotels-card-title card-title">Villas at Poco Diablo</h3>
               </a>
               <span class="hotels-card-hotel">Гостиница</span>
@@ -185,9 +200,10 @@
               </div>
               <span class="hotels-rating">РЕЙТИНГ: 9,2</span>
             </li>
+
             <li class="hotels-card">
               <a class="hotels-card-link-image" href="#">
-                <img class="hotels-card-image" src="image/hotels/desert-quail-inn.jpg" width="300" height="212" alt="Красные скалы в солнечную погоду на фоне ясного неба.">
+                <img class="hotels-card-image" src="image/hotel-3.jpg" width="300" height="212" alt="Красные скалы в солнечную погоду на фоне ясного неба.">
                 <h3 class="hotels-card-title card-title">Desert Quail Inn</h3>
               </a>
               <span class="hotels-card-hotel">Гостиница</span>
@@ -199,9 +215,10 @@
               </div>
               <span class="hotels-rating">РЕЙТИНГ: 6,9</span>
             </li>
+
             <li class="hotels-card">
               <a class="hotels-card-link-image" href="#">
-                <img class="hotels-card-image" src="image/hotels/green-tree-inn.jpg" width="300" height="212" alt="Красные скалы на фоне заката.">
+                <img class="hotels-card-image" src="image/hotel-4.jpg" width="300" height="212" alt="Красные скалы на фоне заката.">
                 <h3 class="hotels-card-title card-title">GreenTree Inn</h3>
               </a>
               <span class="hotels-card-hotel">Гостиница</span>
@@ -214,6 +231,7 @@
               <span class="hotels-rating">РЕЙТИНГ: 5,0</span>
             </li>
           </ul>
+
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -235,6 +253,7 @@
             </li>
           </ul>
         </section>
+
         <section class="subscribe-inner">
           <h2 class="subscribe-inner-title section-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-inner-text section-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -245,10 +264,13 @@
           </form>
         </section>
       </main>
+
+
       <footer class="page-footer">
         <div class="footer-wrap">
           <section class="footer-social">
-            <h2 class="visually-hidden section-title">Соцсети.</h2>
+            <h2 class="visually-hidden">Соцсети</h2>
+
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://vk.com/htmlacademy">
@@ -270,8 +292,9 @@
               </li>
             </ul>
           </section>
-          <section class="footer-contacts">
-            <h2 class="visually-hidden section-title">Контакты.</h2>
+
+          <section class="footer-contacts" >
+            <h2 class="visually-hidden">Контакты.</h2>
             <address class="footer-contacts-address">
               <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
