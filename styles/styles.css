@@ -136,7 +136,7 @@ body {
   background: #e5e5e5;
 }
 
-/* */
+
 .transparent {
   background-color: transparent;
   border: 3px solid transparent;
@@ -310,11 +310,12 @@ body {
 .index-header {
   position: relative;
   background-image: url("../image/index-background.jpg");
-  background-color: #82b3d3;
+  background-color: #696969;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+
 }
 
 .index-header::after {
