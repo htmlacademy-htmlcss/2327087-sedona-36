@@ -1193,14 +1193,14 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #a9a9a9;
 }
 
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #a9a9a9;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1208,17 +1208,22 @@ body {
 
 .range-toggle:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #a9a9a9;
+  outline: 2px solid #83b3d3;
 }
 
 .range-toggle:focus {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  outline: 3px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83b3d3;
+  background-color: #a9a9a9;
 }
 
 .range-toggle:active {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
   outline: 2px solid #83b3d3;
+  background-color: #a9a9a9;
 }
+
 
 .toggle-min {
   left: 0;
