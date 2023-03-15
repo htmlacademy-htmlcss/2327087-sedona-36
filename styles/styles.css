@@ -1193,14 +1193,14 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #a9a9a9;
+  background-color: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #a9a9a9;
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
